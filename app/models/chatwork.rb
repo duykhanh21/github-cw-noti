@@ -22,7 +22,7 @@ class Chatwork
   class << self
     def picon user
       usr = USERS.select{|u| u[:login] == user}.first
-      if urs.blank?
+      if usr.blank?
         ""
       else
         "[picon:#{usr[:cw_id]}]"
