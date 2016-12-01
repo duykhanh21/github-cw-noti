@@ -39,9 +39,8 @@ class Chatwork
     end
 
     def new_pull pr
-      "[info][title]New pull request created by #{picon(pr['user']['login'])}[/title][hr]
-      - Pull request title: #{pr['title']}
-      - Owner: #{to(pr['user']['login'])}
+      "[info][title]New pull request created by #{picon(pr['user']['login'])}[/title]
+      - Title: #{pr['title']}
       - Link: #{pr['html_url']}[/info]"
     end
 
@@ -49,9 +48,9 @@ class Chatwork
       pic = []
       comment['body'].gsub(/@(\w+)/){|c| pic.push(c.gsub("@", ""))}
       if pic.empty?
-        "[info][title]#{to(pr['user']['login'])} [PR] #{pr['title']}[/title] #{picon(comment['user']['login'])}(commented)[code]#{comment['body']}[/code][hr] - Link: #{comment['html_url']}[/info]"
+        "[info][title][PR] #{pr['title']} #{to(pr['user']['login'])}[/title] #{picon(comment['user']['login'])}(commented)[code]#{comment['body']}[/code][hr] - Link: #{comment['html_url']}[/info]"
       else
-        "[info][title]#{to(pr['user']['login'])} [PR] #{pr['title']}[/title] #{picon(comment['user']['login'])}(commented)[code]#{comment['body']}[/code][hr] - Link: #{comment['html_url']}[hr] #{pic.map{|p| to(p)}.join()}[/info]"
+        "[info][title][PR] #{pr['title']} #{to(pr['user']['login'])}[/title] #{picon(comment['user']['login'])}(commented)[code]#{comment['body']}[/code][hr] - Link: #{comment['html_url']}[hr] #{pic.map{|p| to(p)}.join()}[/info]"
       end
     end
 

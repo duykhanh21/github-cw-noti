@@ -8,8 +8,8 @@ class PayloadController < ApplicationController
       return if params[:comment].nil?
       body = Chatwork.new_comment(params[:comment], params[:pull_request] || params[:issue])
     when 'opened'
-      body = Chatwork.new_pull(params[:pull_request])
       return if params[:pull_request].nil?
+      body = Chatwork.new_pull(params[:pull_request])
     else
       render :json => {} and return
     end
