@@ -10,7 +10,8 @@ class Chatwork
     {id: "", login: "octoberstorm", cw_id: "637888"},
     {id: "", login: "RathanakSreang", cw_id: "1352084"},
     {id: "", login: "", cw_id: "1889879"},
-    {id: "", login: "emily0604", cw_id: "1474365"}
+    {id: "", login: "emily0604", cw_id: "1474365"},
+    {id: "", login: "khanhhd", cw_id: "638426"}
   ]
   CW_URI = {
     host: "https://api.chatwork.com/v1/",
