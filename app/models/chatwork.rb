@@ -11,7 +11,12 @@ class Chatwork
     {id: "", login: "RathanakSreang", cw_id: "1352084"},
     {id: "", login: "", cw_id: "1889879"},
     {id: "", login: "emily0604", cw_id: "1474365"},
-    {id: "", login: "khanhhd", cw_id: "638426"}
+    {id: "", login: "khanhhd", cw_id: "638426"},
+    {id: "", login: "XuanVuPham", cw_id: "2035153"},
+    {id: "", login: "ledinhdoan", cw_id: "2031048"},
+    {id: "", login: "doanchinhat", cw_id: "2076195"},
+    {id: "", login: "nhatnkv", cw_id: "2261573"},
+    {id: "", login: "thanhmancity", cw_id: "2106645"}
   ]
   CW_URI = {
     host: "https://api.chatwork.com/v1/",
