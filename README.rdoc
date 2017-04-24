@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Integrate Github notifications in a Chatwork room.
 
-Things you may want to cover:
+How to do:
 
-* Ruby version
+* Request and get your own API Token from Chatwork.
+* Create a Chatwork room with all members added and room ID issued.
+* Clone repository into local.
+* Deploy to personal Heroku.
+* Add webhook to Github repository with payload URL from heroku at: https://github.com/{your-project}/settings/hooks/new
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+It must work !

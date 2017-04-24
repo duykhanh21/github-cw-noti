@@ -1,0 +1,5 @@
+CW_TOKEN: 123456789 #API token given by Chatwork
+ROOM_ID: 123456789 #ID of Chatwork room
+CW_URI:
+  host: "https://api.chatwork.com/v1/"
+  post: ""
